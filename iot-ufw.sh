@@ -19,4 +19,4 @@ sudo ufw deny proto tcp from 167.94.146.0/24 comment 'Censys'; done  # Censys
 sudo ufw deny proto tcp from 2602:80d:1000:b0cc:e::/80 comment 'Censys'; done # Censys
 sudo ufw deny proto tcp from 2620:96:e000:b0cc:e::/80 comment 'Censys'; done # Censys
 
-ufw reload > /dev/null
+sudo ufw reload > /dev/null
