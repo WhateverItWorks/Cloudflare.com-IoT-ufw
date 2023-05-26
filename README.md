@@ -39,7 +39,7 @@ You can run the ```sudo ufw status verbose``` command to see the rules that are 
 
 Git clone this repo to your system, and run the bash script in the normal manner;
 
-```sudo /your/path/IoT-ufw/./iot.sh```
+```sudo /your/path/cloudflare-IoT-ufw/./iot.sh```
 
 The script will then download all the iot scrapers current v4 & v6 IP's, and install them into ufw's configuration. Check that the rules have been successfuly added; ```sudo ufw status verbose```
 
@@ -52,4 +52,4 @@ The script can run automatically by using cron;
 
 and add the event;
 
-```0 0 * * 1 /your/path/IoT-ufw/iot.sh > /dev/null 2>&1```
+```0 0 * * 1 /your/path/cloudflare-IoT-ufw/iot.sh > /dev/null 2>&1```
