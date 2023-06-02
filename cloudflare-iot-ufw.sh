@@ -7,6 +7,7 @@
 # Additional Information: https://community.checkpoint.com/t5/Management/HowTo-Block-IoT-scanners-like-Shodan-Censys-Shadowserver-PAN/td-p/124612
 # Additional Ways to protect your origin: https://kazamasion.medium.com/methods-to-prevent-leaking-websites-origin-server-ip-behind-cdn-2dbcf1dd444c
 # How to block shodan.io (github gist): https://gist.github.com/jgamblin/2928d45730543fc7ef10cf56e5a980b0
+# How to secure your nginx + Cloudflare configuration to stop any origin leaks: https://blog.jfx.ac/securing-nginx-origin-with-cloudflare.html
 
 #examples only, i was too lazy to include shodan.io. If i get time, i will update this with shodan.ios ips as well
 sudo ufw deny proto tcp from 162.142.125.0/24 comment 'Censys'; done # Censys
