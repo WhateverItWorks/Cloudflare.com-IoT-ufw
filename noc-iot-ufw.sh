@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Block all IoT scanners like Shodan, Censys, Shadowserver, PAN Expanse etc. traffic from exposing your ip behind cloudflare.com
+# Block all IoT scanners like Shodan, Censys, Shadowserver, PAN Expanse etc. traffic from exposing your ip behind noc.org
 # Censys.io Information: https://support.censys.io/hc/en-us/articles/360043177092-Opt-Out-of-Data-Collection
 # Shodan.io Information: https://wiki.ipfire.org/configuration/firewall/blockshodan
 # Additional Information: https://scrapeops.io/web-scraping-playbook/how-to-bypass-cloudflare/
@@ -9,7 +9,6 @@
 # How to block shodan.io (github gist): https://gist.github.com/jgamblin/2928d45730543fc7ef10cf56e5a980b0
 # How to secure your nginx + Cloudflare configuration to stop any origin leaks: https://blog.jfx.ac/securing-nginx-origin-with-cloudflare.html
 
-#examples only, i was too lazy to include shodan.io. If i get time, i will update this with shodan.ios ips as well
 sudo ufw deny proto tcp from 162.142.125.0/24 comment 'Censys'; done # Censys
 sudo ufw deny proto tcp from 167.248.133.0/24 comment 'Censys'; done # Censys
 sudo ufw deny proto tcp from 192.35.168.0/23 comment 'Censys'; done  # Censys
