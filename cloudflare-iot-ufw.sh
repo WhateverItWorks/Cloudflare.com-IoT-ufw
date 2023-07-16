@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Block all IoT scanners like Shodan, Censys, Shadowserver, PAN Expanse etc. traffic from exposing your ip behind noc.org
+# Block all IoT scanners like Shodan, Censys, Shadowserver, PAN Expanse etc. traffic from exposing your ip behind cloudflare.com
 # Censys.io Information: https://support.censys.io/hc/en-us/articles/360043177092-Opt-Out-of-Data-Collection
 # Shodan.io Information: https://wiki.ipfire.org/configuration/firewall/blockshodan
 # Additional Information: https://scrapeops.io/web-scraping-playbook/how-to-bypass-cloudflare/
