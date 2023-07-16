@@ -1,4 +1,4 @@
-# NOC.org-IoT-ufw
+# Cloudflare.com-IoT-ufw
 Block all IoT Scrapers from Exposing your IP Address Behind NOC.org.
 
 ### Setup
@@ -39,7 +39,7 @@ You can run the ```sudo ufw status verbose``` command to see the rules that are 
 
 Git clone this repo to your system, and run the bash script in the normal manner;
 
-```sudo /your/path/noc-IoT-ufw/./noc-iot-ufw.sh```
+```sudo /your/path/cloudflare-IoT-ufw/./cloudflare-IoT-ufw.sh```
 
 The script will then download all the iot scrapers current v4 & v6 IP's, and install them into ufw's configuration. Check that the rules have been successfuly added; ```sudo ufw status verbose```
 
@@ -52,7 +52,7 @@ The script can run automatically by using cron;
 
 and add the event;
 
-```0 0 * * 1 /your/path/noc-IoT-ufw/noc-iot-ufw.sh > /dev/null 2>&1```
+```0 0 * * 1 /your/path/cloudflare-IoT-ufw/cloudflare-IoT-ufw.sh > /dev/null 2>&1```
 
 ### Contributing on AbuseIPDB
 <a href="https://www.abuseipdb.com/user/118422" title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks">
